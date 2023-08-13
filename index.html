@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Git Notes</title>
+        <meta name="author" content="Amol Patil"/>
+        <meta name="description" content="These are notes of GIT"/>
+        <meta name="keywords" content="GIT, GITHUB, Code repository, version control"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <main>
+            <h1 class="title">Git Notes</h1>
+            <section>
+                <p class="question">What is Git and why do we need?</p>
+                <p class="answer">Git is a version contol tool. Lets assume we have updated some code on day 1, and made few more changes in code on day2 and then made some changes on day 3. But there is some problem on day 3 updates and if you want to go back to day changes. Hence we need version control tool. It also keeps track changes in each version. It mainly used for project collabrations.</p>
+                <p class="question">What is difference between Git and GitHub</p>
+                <table class="answer">
+                    <tr>
+                        <th>GitHub</th>
+                        <th>Git</th>
+                    </tr>
+                    <tr>
+                        <td>Its a Service</td>
+                        <td>It is a Software/Tool</td>
+                    </tr>
+                    <tr>
+                        <td>It hosts Git repository/folder/source code</td>
+                        <td>It controls the code versiona and keeps track of code changes</td>
+                    </tr>
+                    <tr>
+                        <td>provides GUI interfaces</td>
+                        <td>It workss through CLI (command line interface tool) </td>
+                    </tr>
+                    <tr>
+                        <td>It is maintained on web/cloud</td>
+                        <td>It is intalled and maintained locally</td>
+                    </tr>
+                </table>
+                <p class="question">Refer below commands for git configurations</p>
+                <p class="answer">This command is used to know git configurations : <code>git config --list</code>
+                the result of this command will be like this <br/>
+                <img alt="git config command" src="images/git-config.jpg"/>
+                Now lets say if we want to change the user name. Then we can us this command: <code>git config --global user.name "amolpatil178"</code>
+                </p>
+                <p class="question">Below is workflow of Git</p>
+                <p class="answer">Whenever create a directory and let's say we are working on files in that direactory. If we want to push this directory on Git, we need to undestand its flow. There are 4 terms we need to understand : <code> Working directory -> Staging area -> local reposiroty -> remote repository </code> </p>
+                <ol>
+                    <li><strong>Working directory</strong> : The directory in which your code files are.</li>
+                    <li><strong>Staging area</strong> : This is the space where git track the files in our directory.</li>
+                    <li><strong>local reposiroty</strong> : This is our local repository connected to Git</li>
+                    <li><strong>Working directory</strong> : This is our remote repository and pushed on github</li>
+                </ol>
+                <p class="answer">
+                    If we compare with actual git commands: <br/>
+                    <code> Working directory -> Staging area -> local reposiroty -> remote repository </code> <br/>
+                    <code> dire:UDEMY_GITHUB -> ...git add.. -> ...git commit... -> .....git push.... </code> <br/>
+                    To know which files are in our workign directory : <code>ls</code>
+                    <img alt="list of files in directory" src="images/ls-command.jpg"/>
+                    if we want know hidden files our workign directory : <code>ls -a</code> <br/>
+                    The command <code>git status</code> is used to know the status of tracked and untracked files in staging area. So we need to move our working directory to staging area hence we need to use command <code>git init</code>. And now if we run <code>git status</code>, you can see there are untracked files which means they are not added to staging area yet.
+                    <img alt="git status command" src="images/git-status.jpg"/>
+                    So to add the files in staging area, we use command : <code>git add file_name1 file_name_2</code> or if we want to add all files to staging area then we can use <code>git add .</code>
+                    <img alt="git add command" src="images/git-add.jpg">
+                    Now our files are in staging area and there are no untrackde files. But lets say if we modify the files in working directory. then again we need to add it in staging area using git add. we can see in below image : 
+                    <img alt="git add command" src="images/git-add-change.jpg"/>
+                    So it means Git keeps trcak of change in code i.e. <strong>change contol</strong>.<br/>
+                    Now lets say we don't want to add changes to staging area which are modiefied in one of the file. It means we can unstage the modification and go back to previuos changes. So lets use command <code>git diff</code> to know which changes are made.
+                    <img alt="git-diff" src="images/git-diff.jpg"/>
+                    Here you can see the '-' sign denotes this is modifeid with content in '+' sign. <br/>
+                    lets say we want to unstage change then we can use <code>git restore file_name</code>
+                    
+                </p>
+                
+
+            </section>
+        </main>
+    </body>
+</html>
