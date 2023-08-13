@@ -76,7 +76,48 @@
                    To know how many commits has done in local reposiroty, we can use : <code>git log</code>
                    <img alt="git commit versions" src="images/git-commit-versions.jpg"/>
                    In above image we can see two versions, first one is with message "git notes from udemy learning center" and second one which is latest "new notes added". if we want have log information concise, we can use : <code>git commit --oneline</code>if we want to go back to previous version.
+                   <img alt="git checkout command" src="images/git-checkout.jpg"/>
+                   you can see in above image, there are 3 commits so far in local reposiroty, there is HEAD which is at master branch and it will be always pointed towards to latest commit. We have used command : <code>git checkout commit_id</code> e.g. git checkout 7940eee. Now we want to go to our latest version i.e. commit id= bcc91d8. we can use <code>git checkout master</code>. Here "master" is branch name which currently we are.<br/>
+                   Below are useful commands related commit and version contorl:
                 </p>
+                <table class="answer">
+                    <tr>
+                        <th>Command</th>
+                        <th>description</th>
+                    </tr>
+                    <tr>
+                        <td>git log</td>
+                        <td>It gives all information about all commits</td>
+                    </tr>
+                    <tr>
+                        <td>git log --oneline</td>
+                        <td>It gives concise information about all commits</td>
+                    </tr>
+                    <tr>
+                        <td>git checkout commit_id</td>
+                        <td>It moves our local reposiroty to previous versions</td>
+                    </tr>
+                    <tr>
+                        <td>git show/git show head</td>
+                        <td>It gives information about latest commit</td>
+                    </tr>
+                    <tr>
+                        <td>git show commit_id</td>
+                        <td>It gives information about specific commit</td>
+                    </tr>
+                    <tr>
+                        <td>git reset --soft HEAD^</td>
+                        <td>It goes back from local repository to staging area. basicall it means uncommit</td>
+                    </tr>
+                    <tr>
+                        <td>git reset HEAD^</td>
+                        <td>It goes back from local repository to working directory.</td>
+                    </tr>
+                    <tr>
+                        <td>git reset --hard HEAD^</td>
+                        <td>It will delete the new changes made in local repository.</td>
+                    </tr>
+                </table>
             </section>
         </main>
     </body>
