@@ -190,6 +190,19 @@
                 <p class="answer">Suppose you are working in project. And you have created new branch called feature and we have made 3 commits in feature branch. At same time your team member has made 2 commits in master branch, so the process to merge master branch latest commit (team member's commit) in feature branch lastest commit called 3 way merge. Lets see below images to understand more:<br/>We have made first commit in master branch and can see HEAD is at the latest commit in master branch.<img alt="3 way master commit" src="images/git-3way_1.jpg"/>Now we have created new branch called feature and move our head feature branch. Here we have made 3 commits and can see HEAD is at the latest commit in feature branch.<img alt="3 way feature commit" src="images/git-3way_2.jpg"/>Now suppose your team member has made 2 commits in Master branch and can see HEAD at latest commit in master brnach.<img alt="new commit in master" src="images/git-3way_3.jpg"/>Now it is time to merge feature branch commit to Master branch as it lags behind by 2 commits in master. You can see git has done extra commit to merge latest commit in Master to latest commit on feature branch.<img alt="2 way merge master" src="images/git-3way_4.jpg"/></p>
                 <p class="question">What is merge conflict?</p>
                 <p class="answer">Suppose you are in master branch. There is one file which has content of 2 lines. Now you have created new branch. We made some changes and adde content 3rd line in that file. We moved to master branch without merging new branch. And in Master branch we have updated same file by adding content at 3rd line. Now we try to merge master with new branch it will create conflict which called as merge conflict.</p>
+                <p class="question">what is Github fork?</p>
+                <p class="answer">When we want contribute someone else's reposiroty, then we can use github fork. A fork is copy of a someone else's reposiroty. This is useful when you want to contribute to their reposiroty. Below are stpes to follow:</p>
+                <ol>
+                    <li>We need to go the reposiroty of someone else which you want to copy. Then click on that repository on github.</li>
+                    <li>There will be option of <code>fork</code>. Click on that and create fork repository, it will create copy of that reposiroty in your github account reposiroty.</li>
+                    <li>Once we have that repository, we need clone it so we can have our local reposiroty.</li>
+                    <li>Then we can make changes in repo. Commit and push the code to repo.</li>
+                    <li>Now we have pushed our code to our remote reposiroty. github will show message like "ther reposiroty is 1 commit ahead of original reposiroty(someone else)"</li>
+                    <li>So we need to make pull request and ask reposiroty owner to verify the chnages and accept the changes. In this way we can contribute to someone else' reposiroty.</li>
+                </ol>
+                <p class="question">How to create github page of your reposiroty?</p>
+                <p class="answer">First select the reposiroty for which we want to create git hub page. Then click on <code>setting</code> and then go to option <code>Pages</code>. Then select the <code>branch</code> and hit <code>save</code>. after few secons it will create github page link.</p>
+                <p></p>
             </section>
         </main>
     </body>
