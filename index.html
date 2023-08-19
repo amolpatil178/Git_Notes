@@ -137,9 +137,49 @@
                     <li>Create branch using command : <code>git brnach branch_name</code></li>
                     <li>Move to new branch repo : <code>git checkout branch_name</code></li>
                     <li>Make the changes in code which you want to</li>
-                    <li>Once changes are done we can merge branch to Master branch using command : <code>git checkout master</code> then <code>git merge branch_name</code></li>
+                    <li>Once changes are done we can merge branch to Master branch using command : <code>git checkout master</code> then <code> </code></li>
                 </ol>
-                <p class="answer"><img alt="git branch" src=""/></p>
+                <p class="answer"><img alt="git branch" src="images/git-branch.jpg"/>Below are some useful commands:</p>
+                <table class="answer">
+                    <tr>
+                        <th>Command</th>
+                        <th>description</th>
+                    </tr>
+                    <tr>
+                        <td>git branch</td>
+                        <td>It gives all branches avilable in local repository</td>
+                    </tr>
+                    <tr>
+                        <td>git branch -r</td>
+                        <td>It gives all branches avilable in remote repository</td>
+                    </tr>
+                    <tr>
+                        <td>git branch -a</td>
+                        <td>It gives all branches avilable in remote and local repository</td>
+                    </tr>
+                    <tr>
+                        <td>git brnach branch_name</td>
+                        <td>Create new branch</td>
+                    </tr>
+                    <tr>
+                        <td>git checkout branch_name</td>
+                        <td>Move to new branch created</td>
+                    </tr>
+                    <tr>
+                        <td>git merge branch_name</td>
+                        <td>Merge new branch in to master branch</td>
+                    </tr>
+                    <tr>
+                        <td>git push -u origin branch_name</td>
+                        <td>To push our new branch to remote reposiroty.</td>
+                    </tr>
+                    <tr>
+                        <td>git branch -d branch_name</td>
+                        <td>Delet new branch</td>
+                    </tr>
+                </table>
+                <p class="question">How to push new branch to remote repo and merge it on github?</p>
+                <p class="answer">To push our new branch created to remote repo, we can use <code>git push -u origin branch_name</code>. Then we need to go on our github remote repository and we will see that new branch is updated saying we can merge it to master branch. But we need to create pull request and approve that pull request then we can able to merge new branch to master branch. Now we have remote master branch which has latest code. But our local master repository is not updatedor synched with remote master repository since we have merged new branch remotely. Hence it is always good practise to do <code>git pull</code> before starting anything.</p>
             </section>
         </main>
     </body>
