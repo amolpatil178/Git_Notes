@@ -131,6 +131,15 @@
                 <p class="answer">The .gitignore file is used to keep our information secret. we can keep secret information in gitignore file. It means whatever information kept in gitignore file will be at local reposiroty and it never pushed to remote reposiroty. We can add file names or folders which we want keep as secret. So we need to create .gitignore file and add file/folder names that need to be keep secure.<img alt="git ignore" src="images/git-ignore.jpg"/> Here we can see there is secret.txt file which we kept secure in .gitignore file.</p>
                 <p class="question">what is README.md file?</p>
                 <p class="answer">The README.md file is a markdown file where we can add all documentation about our project. This file is wrteen is markdown langage. You can add a README file to a repository to communicate important information about your project. A README, along with a repository license, citation file, contribution guidelines, and a code of conduct, communicates expectations for your project and helps you manage contributions. There are few below markdown langauge syntax we can use:<br/>1. Headings: we can use # for heading level 1 then ## for heading level 2 : <code>#heading 1</code>. <a target="_blank" href="https://www.geeksforgeeks.org/what-is-readme-md-file/">Read more...</a></p>
+                <p class="question">What is branch and merging?</p>
+                <p class="answer">Branch is seperate repository and branch of Master repository/branch. Whenever there is big project, we seperate the tasks or features and create new branch for seperate feature, so editing new branch will not affect the Master brnach. Suppose your application is running fine and all code is in Master branch. Let's say you want to add new feature to your application, then we can create new branch which will have all code from Master branch and edit in this new branch. Once the feature is tested and working fine we can merge new branch to Master branch. Below are steps to create brnach and merge branch.</p>
+                <ol>
+                    <li>Create branch using command : <code>git brnach branch_name</code></li>
+                    <li>Move to new branch repo : <code>git checkout branch_name</code></li>
+                    <li>Make the changes in code which you want to</li>
+                    <li>Once changes are done we can merge branch to Master branch using command : <code>git checkout master</code> then <code>git merge branch_name</code></li>
+                </ol>
+                <p class="answer"></p>
             </section>
         </main>
     </body>
