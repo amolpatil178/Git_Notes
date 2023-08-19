@@ -166,6 +166,10 @@
                         <td>Move to new branch created</td>
                     </tr>
                     <tr>
+                        <td>git checkout -b branch_name</td>
+                        <td>Create new branch and move to new branch created.</td>
+                    </tr>
+                    <tr>
                         <td>git merge branch_name</td>
                         <td>Merge new branch in to master branch</td>
                     </tr>
@@ -180,6 +184,12 @@
                 </table>
                 <p class="question">How to push new branch to remote repo and merge it on github?</p>
                 <p class="answer">To push our new branch created to remote repo, we can use <code>git push -u origin branch_name</code>. Then we need to go on our github remote repository and we will see that new branch is updated saying we can merge it to master branch. But we need to create pull request and approve that pull request then we can able to merge new branch to master branch. Now we have remote master branch which has latest code. But our local master repository is not updatedor synched with remote master repository since we have merged new branch remotely. Hence it is always good practise to do <code>git pull</code> before starting anything.<img alt="git branch changes" src="images/git-branch-changes.jpg"/><img alt="git pull request" src="images/git-branch-changes1.jpg"/><img alt="git merge request" src="images/git-branch-changes2.jpg"/></p>
+                <p class="question">what is 2 way merge or fast forward merge?</p>
+                <p class="answer">Suppose we have commited somthing in master branch. Then we have created new branch called feature1 and we have made 3 commits in feature1 branch. Here our master branch is 3 commits behinde, so the process to merge master brnach in feature1 branch lastest commit called 2 way or fast forward merge. Lets see below images to understand more:<br/>We have made first commit in master branch and can see HEAD is at the latest commit in master branch.<img alt="2 way master commit" src="images/git-2way_1.jpg"/>Now we have created new branch called feature and move our head feature branch. Here we have made 3 commits and can see HEAD is at the latest commit in feature branch.<img alt="2 way feature commit" src="images/git-2way_2.jpg"/>Now we need to merge this lastest commit to Master branch as it lags behind by 3 commits.<img alt="2 way merge master" src="images/git-2way_3.jpg"/></p>
+                <p class="question">what is 3 way merge?</p>
+                <p class="answer">Suppose you are working in project. And you have created new branch called feature and we have made 3 commits in feature branch. At same time your team member has made 2 commits in master branch, so the process to merge master branch latest commit (team member's commit) in feature branch lastest commit called 3 way merge. Lets see below images to understand more:<br/>We have made first commit in master branch and can see HEAD is at the latest commit in master branch.<img alt="3 way master commit" src="images/git-3way_1.jpg"/>Now we have created new branch called feature and move our head feature branch. Here we have made 3 commits and can see HEAD is at the latest commit in feature branch.<img alt="3 way feature commit" src="images/git-3way_2.jpg"/>Now suppose your team member has made 2 commits in Master branch and can see HEAD at latest commit in master brnach.<img alt="new commit in master" src="images/git-3way_3.jpg"/>Now it is time to merge feature branch commit to Master branch as it lags behind by 2 commits in master. You can see git has done extra commit to merge latest commit in Master to latest commit on feature branch.<img alt="2 way merge master" src="images/git-3way_4.jpg"/></p>
+                <p class="question">What is merge conflict?</p>
+                <p class="answer">Suppose you are in master branch. There is one file which has content of 2 lines. Now you have created new branch. We made some changes and adde content 3rd line in that file. We moved to master branch without merging new branch. And in Master branch we have updated same file by adding content at 3rd line. Now we try to merge master with new branch it will create conflict which called as merge conflict.</p>
             </section>
         </main>
     </body>
